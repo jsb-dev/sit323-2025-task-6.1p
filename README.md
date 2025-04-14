@@ -16,13 +16,15 @@ Now that the cluster deployment strategy has been set, I need to facilitate comm
 
 Now that the file is completed, I need to apply the service to the cluster in the CLI, run and provide working evidence.
 
+After having problems with my previous kubectl configuration, I opted for the snap install and created the cluster with kinder, which absolved the errors I was receiving when testing the cluster. I proceeded to register the kubernetes manifest with the cluster and deployed it with the docker service I created previously. This allowed me to port-forward the service for a local test with curl, which returned the expected result.
+
 ## Getting Started
 
 - The original project cloned for the microservice is a simple Node.js REST Server
 - Simply `npm install` from the microservice root to install its dependancies
 - Don't forget to make sure the Docker daemon is running before testing the image
 
-## sit323-2025-prac5p
+## sit323-2025-prac5p (previous README)
 
 ## Method
 
