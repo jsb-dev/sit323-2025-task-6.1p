@@ -1,0 +1,13 @@
+# This file defines a Kubernetes service for the calculator microservice.
+apiVersion: v1
+kind: Service
+metadata:
+  name: calculator-service
+spec:
+  selector:
+    app: calculator
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: ClusterIP
